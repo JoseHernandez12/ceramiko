@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>CERAMIKOS | Revestimientos de Lujo & Arquitectura</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Fuentes e Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Librería de Animación AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+   <!-- Navegación -->
+<nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container">
+            <!-- Logo más grande y estilizado -->
+            <a class="navbar-brand d-flex align-items-center text-dark fw-bold" href="#">
+                <img src="img/avatar_positivo.jpg" alt="Logo Ceramikos" onerror="this.src='https://via.placeholder.com/60x60?text=C'">
+                <span class="d-none d-sm-inline">CERAMIKOS</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto text-uppercase fw-bold align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promos">Promos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn-contact" href="#contacto">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Inicio (Hero) - CON PARALLAX -->
+   <section id="inicio" class="hero p-0" style="position: relative; overflow: hidden; background: #121212;">
+    <img src="img/about.jpg" 
+         alt="Ceramikos - Revestimientos" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; z-index: 1;">
+
+    <div class="container" data-aos="zoom-out" data-aos-duration="1500" style="position: relative; z-index: 2;">
+        <h1>Ceramikos</h1>
+        <p>ESTILO • INNOVACIÓN • ELEGANCIA</p>
+        
+        <div class="mt-5">
+            <a href="#galeria" class="btn-lux">Explorar Colecciones</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Nosotros -->
+    <section id="nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-img-box">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" class="img-fluid shadow-lg" alt="Showroom Ceramikos">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 ps-lg-5" data-aos="fade-left">
+                    <h6 class="text-gold fw-bold text-uppercase mb-3" style="letter-spacing: 5px; color: var(--gold);">Nuestra Historia</h6>
+                    <h2 class="display-5 fw-bold text-uppercase mb-4">Referentes de Lujo en <span style="color: var(--gold);">Puerto Ordaz</span></h2>
+                    <p class="lead text-muted mb-4">Desde nuestra fundación, en Ceramikos nos hemos dedicado a la búsqueda incansable de la perfección estética y funcional.</p>
+                    <p class="mb-4">No somos solo una tienda de revestimientos; somos el socio estratégico de arquitectos, constructores y amantes del buen diseño. Nuestra selección incluye piezas importadas de Italia, España y las mejores canteras locales, asegurando que cada proyecto sea una obra de arte única.</p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-6">
+                            <h3 class="h2 fw-bold mb-0">+15</h3>
+                            <p class="small text-uppercase mb-0" style="color: var(--gold);">Años de Trayectoria</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="h2 fw-bold mb-0">500+</h3>
+                            <p class="small text-uppercase mb-0" style="color: var(--gold);">Proyectos Realizados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Servicios Especializados</h2>
+                <p>Brindamos soluciones integrales que van desde la concepción del diseño hasta la instalación final.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="service-item">
+                        <i class="fas fa-gem service-icon"></i>
+                        <h4 class="fw-bold h5 text-uppercase mb-3">Venta Exclusiva</h4>
+                        <p class="small text-muted">Acceso a colecciones limitadas de porcelanatos pulidos, satinados y rústicos de gran formato.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item">
+                        <i class="fas fa-drafting-compass service-icon"></i>
+                        <h4 class="fw-bold h5 text-uppercase mb-3">Cómputos Métricos</h4>
+                        <p class="small text-muted">Asesoría técnica para el cálculo preciso de material, evitando desperdicios innecesarios.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item">
+                        <i class="fas fa-truck-loading service-icon"></i>
+                        <h4 class="fw-bold h5 text-uppercase mb-3">Logística Segura</h4>
+                        <p class="small text-muted">Transporte especializado para asegurar que cada pieza llegue en perfectas condiciones a su obra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROMOS -->
+<div class="row justify-content-center mt-5">
+    <div class="col-lg-12">
+        <div class="promo-container shadow-lg" data-aos="zoom-in" style="background: var(--dark); border-radius: 15px; overflow: hidden; position: relative;">
+            <div class="row g-0 align-items-center">
+                <!-- Columna de Texto Promocional -->
+                <div class="col-md-4 p-5 text-white">
+                    <span class="badge mb-3" style="background: var(--gold); letter-spacing: 2px;">OFERTAS LIMITADAS</span>
+                    <h3 class="fw-bold h2 mb-4" style="letter-spacing: 2px;">PROMOS <br>TEMPORADA</h3>
+                    <p class="small opacity-75 mb-4">Aprovecha descuentos exclusivos en nuestras colecciones seleccionadas de porcelanatos y revestimientos de gran formato.</p>
+                    <a href="https://wa.me/tu-numero" class="btn-lux" style="background: var(--gold); color: white; border: none; padding: 12px 30px;">Consultar Disponibilidad</a>
+                </div>
+                
+                <!-- Columna del Carrusel de Imágenes -->
+                <div class="col-md-8">
+                    <div id="promoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <!-- Promo 1 -->
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <div class="promo-img-wrapper" style="height: 450px; position: relative;">
+                                    <img src="img/donation-1.jpg" class="d-block w-100 h-100" alt="Promoción 1" style="object-fit: cover;">
+                                    <div class="promo-tag">20% OFF</div>
+                                </div>
+                            </div>
+                            <!-- Promo 2 -->
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="promo-img-wrapper" style="height: 450px; position: relative;">
+                                    <img src="img/donation-2.jpg" class="d-block w-100 h-100" alt="Promoción 2" style="object-fit: cover;">
+                                    <div class="promo-tag">ÚLTIMAS PIEZAS</div>
+                                </div>
+                            </div>
+                            <!-- Promo 3 -->
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="promo-img-wrapper" style="height: 450px; position: relative;">
+                                    <img src="img/donation-3.jpg" class="d-block w-100 h-100" alt="Promoción 3" style="object-fit: cover;">
+                                    <div class="promo-tag">NUEVA COLECCIÓN</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DIVISORIA PARALLAX 1 -->
+ <section class="parallax-divider parallax-bg" style="background-image: url('img/carousel-1.jpg');">
+    <div class="parallax-overlay"></div>
+    <div class="container" data-aos="fade-up">
+        <h2 class="display-5 fw-bold text-uppercase mb-3" style="letter-spacing: 5px;">Detalles que Inspiran</h2>
+        <p class="lead fw-light" style="letter-spacing: 2px;">La perfección no es un detalle, los detalles hacen la perfección.</p>
+    </div>
+</section>
+
+    <!-- Galería -->
+    <section id="galeria">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Inspiración & Proyectos</h2>
+                <p>Explore una selección de espacios diseñados con nuestros materiales premium.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Baño Lujo">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold text-uppercase">Baños de Vanguardia</h5>
+                            <p class="small">Uso de mármoles de gran formato para continuidad visual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Cocina Minimalista">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold text-uppercase">Cocinas de Autor</h5>
+                            <p class="small">Superficies resistentes a altas temperaturas y manchas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Salón Amplio">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold text-uppercase">Salones Majestuosos</h5>
+                            <p class="small">Pulidos espejo que amplifican la iluminación natural.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="zoom-in">
+                    <div class="gallery-item" style="height: 450px;">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" alt="Exteriores">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold text-uppercase">Exteriores Resistentes</h5>
+                            <p class="small">Antideslizantes con estética de piedra natural.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item" style="height: 450px;">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80" alt="Escaleras">
+                        <div class="gallery-overlay">
+                            <h5 class="fw-bold text-uppercase">Detalles en Escaleras</h5>
+                            <p class="small">Piezas especiales y cortes a medida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DIVISORIA PARALLAX 2 -->
+  <section class="parallax-divider parallax-bg" style="background-image: url('img/gallery-6.jpg');">
+    <div class="parallax-overlay"></div>
+        <div class="container" data-aos="fade-up">
+            <h2 class="display-5 fw-bold text-uppercase mb-3" style="letter-spacing: 5px;">Calidad Insuperable</h2>
+            <p class="lead fw-light" style="letter-spacing: 2px;">Importamos directamente desde las mejores canteras del mundo.</p>
+        </div>
+    </section>
+
+    <!-- Promos -->
+    <section id="promos" class="bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Colecciones Destacadas</h2>
+                <p>Novedades y piezas exclusivas disponibles para entrega inmediata en nuestro showroom.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="promo-card">
+                        <div class="promo-img-container">
+                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=800&q=80" alt="Producto 1">
+                        </div>
+                        <div class="promo-content text-center">
+                            <span class="badge-promo">Nuevo Ingreso</span>
+                            <h4 class="h5 fw-bold text-uppercase mb-3">Symphony Grey Pulido</h4>
+                            <p class="small text-muted mb-4">Porcelanato de gran formato 120x60cm con veteado orgánico.</p>
+                            <a href="#contacto" class="btn-lux py-2 px-4">Pedir Cotización</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="promo-card">
+                        <div class="promo-img-container">
+                            <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=80" alt="Producto 2">
+                        </div>
+                        <div class="promo-content text-center">
+                            <span class="badge-promo">Alta Gama</span>
+                            <h4 class="h5 fw-bold text-uppercase mb-3">Grifería Black Matte</h4>
+                            <p class="small text-muted mb-4">Set completo para baño con acabado electrostático de alta resistencia.</p>
+                            <a href="#contacto" class="btn-lux py-2 px-4">Pedir Cotización</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="promo-card">
+                        <div class="promo-img-container">
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Producto 3">
+                        </div>
+                        <div class="promo-content text-center">
+                            <span class="badge-promo">Tendencia 2026</span>
+                            <h4 class="h5 fw-bold text-uppercase mb-3">Oak Nature Porcelánico</h4>
+                            <p class="small text-muted mb-4">La calidez de la madera con la durabilidad eterna de la cerámica.</p>
+                            <a href="#contacto" class="btn-lux py-2 px-4">Pedir Cotización</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Todo lo que necesita saber antes de realizar su inversión en revestimientos.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                                    ¿Hacen envíos a nivel nacional?
+                                </button>
+                            </h2>
+                            <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body small text-muted">
+                                    Sí, realizamos envíos a todo el territorio nacional. Contamos con alianzas logísticas especializadas en el manejo de material frágil para garantizar que cada caja llegue en perfecto estado hasta la puerta de su obra o domicilio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                                    ¿Cuál es la diferencia entre un porcelanato pulido y uno satinado?
+                                </button>
+                            </h2>
+                            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body small text-muted">
+                                    El porcelanato pulido tiene un acabado brillante tipo espejo, ideal para interiores elegantes y con gran iluminación. El satinado tiene un acabado sedoso al tacto sin brillo intenso, siendo mucho más resistente a las rayas y manchas, ideal para zonas de alto tráfico.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">
+                                    ¿Venden pegamentos y aditivos especiales?
+                                </button>
+                            </h2>
+                            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body small text-muted">
+                                    Ofrecemos una gama completa de pegamentos de alta adherencia específicos para grandes formatos, así como fraguas epóxicas y juntas de dilatación para asegurar una instalación profesional y duradera.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">
+                                    ¿Cómo puedo solicitar un presupuesto personalizado?
+                                </button>
+                            </h2>
+                            <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body small text-muted">
+                                    Puede enviarnos sus planos o medidas a través de nuestro formulario de contacto o vía WhatsApp. Uno de nuestros asesores técnicos le contactará en menos de 24 horas hábiles.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Division -->
+
+  <section class="parallax-divider parallax-bg" style="background-image: url('img/gallery-6.jpg');">
+    <div class="parallax-overlay"></div>
+        <div class="container" data-aos="fade-up">
+            <h2 class="display-5 fw-bold text-uppercase mb-3" style="letter-spacing: 5px;">Calidad Insuperable</h2>
+            <p class="lead fw-light" style="letter-spacing: 2px;">Importamos directamente desde las mejores canteras del mundo.</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info-box shadow-sm">
+                        <h6 class="text-gold fw-bold text-uppercase mb-4" style="letter-spacing: 5px; color: var(--gold);">Hablemos</h6>
+                        <h2 class="fw-bold text-uppercase mb-5">Conecte con <br>Nuestros Expertos</h2>
+                        
+                        <div class="mb-4">
+                            <p class="mb-1 fw-bold"><i class="fas fa-map-marker-alt me-2" style="color: var(--gold);"></i> Showroom PZO</p>
+                            <p class="small text-muted">C.C. Las Cúpulas, Piso 2, Av. Unare, Puerto Ordaz, Edo. Bolívar.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p class="mb-1 fw-bold"><i class="fas fa-phone-alt me-2" style="color: var(--gold);"></i> Teléfonos</p>
+                            <p class="small text-muted">+58 412 123 4567 / +58 286 923 0000</p>
+                        </div>
+
+                        <div class="mb-5">
+                            <p class="mb-1 fw-bold"><i class="fas fa-clock me-2" style="color: var(--gold);"></i> Horario de Atención</p>
+                            <p class="small text-muted">Lunes a Viernes: 8:30 AM - 5:30 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                        </div>
+
+                        <div class="pt-4 border-top">
+                            <p class="small text-uppercase fw-bold mb-3">Redes Sociales</p>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="p-4 p-md-5">
+                        <h3 class="fw-bold text-uppercase mb-4">Envíenos un Mensaje</h3>
+                        <p class="text-muted mb-5">Complete el formulario y nos pondremos en contacto con usted para brindarle la mejor asesoría técnica.</p>
+                        <form class="row g-4" onsubmit="event.preventDefault();">
+                            <div class="col-md-6">
+                                <label class="small text-uppercase fw-bold mb-2">Nombre y Apellido</label>
+                                <input type="text" class="form-control rounded-0 py-3 bg-light border-0" placeholder="Ej. Juan Pérez">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small text-uppercase fw-bold mb-2">Correo Electrónico</label>
+                                <input type="email" class="form-control rounded-0 py-3 bg-light border-0" placeholder="juan@ejemplo.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="small text-uppercase fw-bold mb-2">Asunto</label>
+                                <select class="form-select rounded-0 py-3 bg-light border-0">
+                                    <option selected disabled>Seleccione una opción</option>
+                                    <option>Presupuesto</option>
+                                    <option>Asesoría Técnica</option>
+                                    <option>Consulta de Stock</option>
+                                    <option>Otros</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="small text-uppercase fw-bold mb-2">Mensaje</label>
+                                <textarea class="form-control rounded-0 py-3 bg-light border-0" rows="5" placeholder="Describa su proyecto o consulta..."></textarea>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button type="submit" class="btn-lux w-100">Enviar Solicitud de Información</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<!-- Footer Actualizado -->
+<footer class="py-5" style="background: var(--dark); color: rgba(255,255,255,0.7);">
+    <div class="container text-center">
+        <!-- Contenedor de Logo y Título -->
+        <div class="d-flex align-items-center justify-content-center mb-4">
+            <img src="img/avatar_positivo.jpg" alt="Logo Ceramikos" 
+                 style="height: 50px; width: auto; margin-right: 15px; border-radius: 5px;">
+            <h4 class="text-white fw-bold mb-0" style="letter-spacing: 5px;">CERAMIKOS</h4>
+        </div>
+
+        <!-- Descripción -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-6">
+                <p class="small">Curaduría de materiales nobles para espacios que cuentan historias. Calidad garantizada, diseño sin límites.</p>
+            </div>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="d-flex justify-content-center gap-4 mb-5">
+            <a href="https://instagram.com/tu_cuenta" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/tu_cuenta" class="social-link" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/tu_numero" class="social-link" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:contacto@ceramikos.com" class="social-link" title="Correo">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Información Legal -->
+        <div class="border-top border-secondary pt-4" style="border-color: rgba(255,255,255,0.1) !important;">
+            <p class="mb-0 small">© 2026 Ceramikos C.A. - Todos los derechos reservados. | Rif: J-12345678-9</p>
+            <p class="extra-small mt-2" style="font-size: 0.75rem; opacity: 0.5;">Puerto Ordaz, Venezuela.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts Finales -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // 1. Inicializar Animaciones AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+            offset: 100
+        });
+
+        // 2. Lógica de la Calculadora (Sin usar alert)
+        function calcular() {
+            const largo = parseFloat(document.getElementById('largo').value);
+            const ancho = parseFloat(document.getElementById('ancho').value);
+            const resBox = document.getElementById('res-box');
+            const m2Total = document.getElementById('m2-total');
+            const labelTotal = document.getElementById('label-total');
+            const resBorder = document.getElementById('res-border');
+
+            resBox.style.display = 'block';
+
+            if (largo > 0 && ancho > 0) {
+                // Cálculo de área + 10% de desperdicio técnico
+                const areaBase = largo * ancho;
+                const totalConDesperdicio = areaBase * 1.10;
+
+                m2Total.innerText = totalConDesperdicio.toFixed(2) + ' m²';
+                labelTotal.innerText = 'Total Requerido (Inc. 10% Desperdicio):';
+                m2Total.classList.remove('text-danger');
+                resBorder.classList.remove('border-danger');
+                resBorder.classList.add('border-secondary');
+            } else {
+                // Mensaje de error visual en lugar de alert()
+                m2Total.innerText = 'Datos Inválidos';
+                m2Total.classList.add('text-danger');
+                labelTotal.innerText = 'Error:';
+                resBorder.classList.add('border-danger');
+                resBorder.classList.remove('border-secondary');
+            }
+        }
+
+        // 3. Cambio de estilo del Navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.style.padding = '10px 0';
+                nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.padding = '20px 0';
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

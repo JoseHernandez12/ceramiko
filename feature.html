@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>CERAMIKOS | Título de la Página</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Fuentes e Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* --- HERO SECTION INTERNA --- */
+        .hero-internal {
+            height: 40vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .hero-internal h1 {
+            font-weight: 200;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegación -->
+<nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container">
+            <!-- Logo más grande y estilizado -->
+            <a class="navbar-brand d-flex align-items-center text-dark fw-bold" href="#">
+                <img src="img/avatar_positivo.jpg" alt="Logo Ceramikos" onerror="this.src='https://via.placeholder.com/60x60?text=C'">
+                <span class="d-none d-sm-inline">CERAMIKOS</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto text-uppercase fw-bold align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Promos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn-contact" href="#contacto">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de Página Interna -->
+    <section class="hero-internal">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4">Nombre de la Sección</h1>
+            <p class="lead fw-light">Explora la excelencia en cada detalle arquitectónico</p>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Ejemplo de Tarjeta de Producto/Contenido -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-luxury p-4">
+                        <div class="mb-4" style="height: 250px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                            <span class="text-muted small">Placeholder Imagen [Producto]</span>
+                        </div>
+                        <h5 class="fw-bold mb-3 uppercase">Mármol Statuario</h5>
+                        <p class="text-muted small mb-4">Pureza y elegancia italiana para espacios que respiran sofisticación.</p>
+                        <a href="#" class="btn btn-gold w-100">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-luxury p-4">
+                        <div class="mb-4" style="height: 250px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                            <span class="text-muted small">Placeholder Imagen [Producto]</span>
+                        </div>
+                        <h5 class="fw-bold mb-3 uppercase">Piedra Volcánica</h5>
+                        <p class="text-muted small mb-4">Texturas orgánicas para fachadas contemporáneas de alto impacto.</p>
+                        <a href="#" class="btn btn-gold w-100">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-luxury p-4">
+                        <div class="mb-4" style="height: 250px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                            <span class="text-muted small">Placeholder Imagen [Producto]</span>
+                        </div>
+                        <h5 class="fw-bold mb-3 uppercase">Madera Roble</h5>
+                        <p class="text-muted small mb-4">Calidez natural con acabados de ingeniería de última generación.</p>
+                        <a href="#" class="btn btn-gold w-100">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <h3 class="footer-logo mb-4 text-white">CERAMIKOS</h3>
+                    <p class="text-secondary small">Expertos en revestimientos de lujo para los proyectos arquitectónicos más exigentes del mundo.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <h6 class="text-uppercase fw-bold mb-4 small">Navegación</h6>
+                    <a href="#" class="footer-link small">Inicio</a>
+                    <a href="#" class="footer-link small">Colecciones</a>
+                    <a href="#" class="footer-link small">Showroom</a>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="text-uppercase fw-bold mb-4 small">Soporte</h6>
+                    <a href="#" class="footer-link small">FAQ</a>
+                    <a href="#" class="footer-link small">Cuidado de Material</a>
+                    <a href="#" class="footer-link small">Contacto</a>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-uppercase fw-bold mb-4 small">Contacto</h6>
+                    <p class="text-secondary small mb-1"><i class="fas fa-location-dot me-2"></i> Calle de Lujo 123, Madrid</p>
+                    <p class="text-secondary small mb-1"><i class="fas fa-phone me-2"></i> +34 900 123 456</p>
+                    <p class="text-secondary small"><i class="fas fa-envelope me-2"></i> info@ceramikos.com</p>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center mt-4">
+                <p class="text-secondary small">&copy; 2024 CERAMIKOS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar animaciones AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        // Efecto del Navbar al hacer Scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

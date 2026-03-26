@@ -1,0 +1,355 @@
+
+        :root {
+            --gold: #C5A059;
+            --dark: #121212;
+            --light: #F8F9FA;
+            --white: #FFFFFF;
+            --gray-text: #666666;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--white);
+            color: var(--dark);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* --- NAVEGACIÓN --- */
+        /* Estilos para los enlaces del navbar similares a los del footer */
+   /* --- NAVEGACIÓN MEJORADA --- */
+        .navbar {
+            transition: all 0.4s ease-in-out;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .navbar-brand img {
+            height: 60px; /* Logo más grande */
+            width: auto;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .navbar-brand span {
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            margin-left: 15px;
+        }
+
+        .nav-link {
+            color: var(--dark) !important;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 0.8rem;
+            letter-spacing: 1.5px;
+            padding: 10px 15px !important;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--gold);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 60%;
+        }
+
+    /* Línea decorativa al pasar el cursor (opcional) */
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 5px;
+        left: 15%;
+        background-color: var(--gold);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 70%;
+    }
+
+    .navbar-brand img {
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover img {
+        transform: scale(1.05);
+    }
+     .nav-btn-contact {
+            background-color: var(--gold);
+            color: white !important;
+            border: none;
+            padding: 10px 25px !important;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            margin-left: 15px;
+            border-radius: 0; /* Estilo cuadrado para mantener look arquitectónico */
+        }
+
+        .nav-btn-contact:hover {
+            background-color: var(--dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+          @media (max-width: 991px) {
+            .navbar-brand img { height: 50px; }
+            .navbar-brand span { font-size: 1.2rem; }
+            .nav-link { padding: 10px 0 !important; border-bottom: 1px solid #eee; }
+            .nav-link::after { display: none; }
+            .nav-btn-contact { margin-left: 0; margin-top: 10px; text-align: center; }
+        }
+
+        /* --- EFECTO PARALLAX BASE --- */
+        .parallax-bg {
+            background-attachment: fixed; /* Esto crea el efecto Parallax */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* --- HERO (Ahora con Parallax) --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6199f7a009?auto=format&fit=crop&w=1500&q=80');
+            color: white;
+            text-align: center;
+        }
+        .hero h1 { font-size: 4rem; font-weight: 700; letter-spacing: 10px; margin-bottom: 20px; text-transform: uppercase; }
+        .hero p { font-weight: 200; letter-spacing: 4px; font-size: 1.2rem; }
+
+        /* --- SECCIONES DIVISORIAS PARALLAX --- */
+        .parallax-divider {
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+        .parallax-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(18, 18, 18, 0.75); /* Oscurece la imagen para que el texto resalte */
+            z-index: -1;
+        }
+
+        /* --- ESTILOS DE SECCIÓN --- */
+        section:not(.parallax-divider):not(.hero) { padding: 120px 0; }
+        .section-header { margin-bottom: 80px; text-align: center; }
+        .section-header h2 { text-transform: uppercase; font-weight: 700; letter-spacing: 3px; position: relative; padding-bottom: 20px; }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%;
+            width: 80px; height: 3px;
+            background: var(--gold);
+            transform: translateX(-50%);
+        }
+        .section-header p { color: var(--gray-text); max-width: 600px; margin: 20px auto 0; font-size: 0.9rem; }
+
+        /* --- NOSOTROS --- */
+        .about-text { padding: 40px; }
+        .about-img-box { position: relative; }
+        .about-img-box::before {
+            content: '';
+            position: absolute;
+            top: -20px; left: -20px;
+            width: 100px; height: 100px;
+            border-top: 5px solid var(--gold);
+            border-left: 5px solid var(--gold);
+        }
+
+        /* --- SERVICIOS --- */
+        .service-item {
+            padding: 50px 30px;
+            background: var(--white);
+            border: 1px solid #f0f0f0;
+            transition: 0.5s;
+            height: 100%;
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--gold);
+        }
+        .service-icon { font-size: 3rem; color: var(--gold); margin-bottom: 25px; }
+
+        /* --- CALCULADORA --- */
+        .calculator-container {
+            background: var(--dark);
+            color: white;
+            padding: 80px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .calculator-container::after {
+            content: 'Σ';
+            position: absolute;
+            right: -20px; bottom: -50px;
+            font-size: 20rem;
+            color: rgba(255,255,255,0.03);
+            font-weight: 900;
+        }
+        .form-control-lux {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            border-radius: 0;
+            color: white;
+            padding: 15px 0;
+            font-size: 1.1rem;
+        }
+        .form-control-lux:focus { background: transparent; color: white; border-color: var(--gold); box-shadow: none; }
+
+        /* --- GALERÍA --- */
+        .gallery-item { position: relative; overflow: hidden; height: 350px; cursor: pointer; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 1s; }
+        .gallery-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(18, 18, 18, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+        /* --- PROMOS --- */
+        .promo-card {
+            background: var(--white);
+            border: 1px solid #eee;
+            transition: 0.4s;
+            height: 100%;
+        }
+        .promo-card:hover { border-color: var(--gold); }
+        .promo-img-container { height: 250px; overflow: hidden; }
+        .promo-img-container img { width: 100%; height: 100%; object-fit: cover; }
+        .promo-content { padding: 30px; }
+        .badge-promo {
+            background: var(--gold);
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* --- FAQ --- */
+        .accordion-item { border: none; margin-bottom: 15px; background: var(--light); }
+        .accordion-button {
+            background: var(--light) !important;
+            color: var(--dark) !important;
+            font-weight: 600;
+            padding: 25px;
+            box-shadow: none !important;
+        }
+        .accordion-button:not(.collapsed) { color: var(--gold) !important; }
+
+        /* --- CONTACTO --- */
+        .contact-info-box { background: var(--light); padding: 50px; height: 100%; border-left: 5px solid var(--gold); }
+        .social-link {
+            width: 45px; height: 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            color: var(--dark);
+            margin-right: 10px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .social-link:hover { background: var(--gold); border-color: var(--gold); color: white; }
+
+        /* --- BOTONES --- */
+        .btn-lux {
+            background: var(--dark);
+            color: white;
+            padding: 15px 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            border: none;
+            transition: 0.4s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-lux:hover { background: var(--gold); color: white; transform: translateY(-3px); }
+
+        footer { background: #0a0a0a; color: rgba(255,255,255,0.5); padding: 80px 0 40px; font-size: 0.8rem; }
+    
+        /* Estilos adicionales para la sección de Promos */
+    .promo-tag {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: var(--gold);
+        color: white;
+        padding: 8px 20px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
+    .promo-img-wrapper img {
+        transition: transform 5s ease;
+    }
+    
+    .carousel-item.active .promo-img-wrapper img {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .promo-img-wrapper { height: 300px !important; }
+        .promo-container .p-5 { padding: 2rem !important; }
+    }
+
+     /* Estilos para los iconos de redes sociales */
+    .social-link {
+        color: rgba(255,255,255,0.6);
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .social-link:hover {
+        color: var(--gold);
+        transform: translateY(-3px);
+    }
+
+    .extra-small {
+        letter-spacing: 1px;
+    }
